@@ -33,6 +33,8 @@ module Wombat
             Follow
           when :headers
             Headers
+          when :integer
+            Integer
           else
             raise Wombat::Property::Locators::UnknownTypeException.new("Unknown property format #{property.format}.")
           end
