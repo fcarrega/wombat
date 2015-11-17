@@ -16,7 +16,7 @@ module Wombat
       module Factory
         def self.locator_for(property)
           # TO BE REMOVED
-          puts "---------------- PROPERTY: #{property} ------------------------"
+          puts "---------------- PROPERTY: #{property.wombat_property_format} ------------------------"
           # END
           klass = case(property.wombat_property_format)
           when :text
